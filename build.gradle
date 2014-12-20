@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile files('libs/lwjgl3.jar')
+    runtime files('libs/natives')
+}
+
+jar {
+    from configurations.compile.collect { zipTree it }
+    manifest.attributes 'Main-Class': 'net.redrabbit.tesseract.Tesseract' 
+}
+
+task runJar(type: JavaExec, dependsOn: jar) {
+    main 'net.redrabbit.tesseract.Tesseract'
+    classpath = runtimeClasspath
+}
