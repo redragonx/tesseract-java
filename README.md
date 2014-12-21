@@ -57,7 +57,8 @@ JAR and natives Configuration
 Running the program
 -------------------
 <ol>
-<li>If gradle is not installed, install it. Then from the project directory, build the project using <code>gradle build</code>.</li>
+<li>If gradle is not installed, install it.</li>
+<li>Then from the project directory, build the project using <code>gradle build</code>.</li>
 <li>Run the program by typing <code>gradle runJar</code></li>
 </ol>
 
