@@ -21,7 +21,7 @@ This project aims to create an animated 3D rendering of a 3D cube known as a tes
 Screenshot
 ----------
 ![Picture](http://rabbitfighter.net/wp-content/uploads/2014/12/tesseract.jpg)
-
+This is what the tesseract should look like. 
 
 Team
 ----------------
