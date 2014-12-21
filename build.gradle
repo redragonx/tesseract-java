@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    compile files('libs/lwjgl3.jar')
+    compile files('libs/jar/lwjgl3.jar')
     runtime files('libs/natives')
 }
 
