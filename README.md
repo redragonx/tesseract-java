@@ -6,6 +6,7 @@ Navigation
 -----------
 [Tesseract](#tesseract) |
 [Purpose](#purpose) |
+[Info](#info) |
 [Screenshot](#screenshot) |
 [Team](#team) |
 [Configuration](#configuration) | 
@@ -26,7 +27,6 @@ Info about the tesseract can be found here:
 <li>http://en.wikipedia.org/wiki/Tesseract</li>
 <ul>
 
-This is generally what a tessearct should look like:
 
 Screenshot
 ----------
@@ -34,7 +34,7 @@ Screenshot
 
 
 Team
-----------------
+----
 <ul>
 <li>@redragonx</li>
 <li>@rabbitfighter81</li>
