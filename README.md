@@ -20,7 +20,6 @@ This project aims to create an animated 3D rendering of a 4D cube known as a tes
 
 Screenshot
 ----------
-This is what the tesseract should look like. 
 ![Picture](http://rabbitfighter.net/wp-content/uploads/2014/12/tesseract.jpg)
 
 
@@ -42,7 +41,7 @@ JAR and natives Configuration
 <li>Obtain the LWJGL zip file from: http://www.lwjgl.org/download and extract the files somewhere.</li>
 <li>Create a folder in the main directory of the project called <code>libs/</code></li>
 <li>Move the native folder from wherever you extracted the lwjgl.zip folder and rename it to <code>natives</code>, and then move the whole folder into the <code>libs/</code> folder in the project.</li>
-<li>Then copy the lwjgl.jar from the exttracted files and move it into the <code>libs</code> folder in the project. You must then rename it <code>lwjgl3.jar</code>.</li>
+<li>Then copy the lwjgl.jar from the exttracted files and move it into the <code>libs/</code> folder in the project. You must then rename it <code>lwjgl3.jar</code>.</li>
 </ol>
 
 Running the program
