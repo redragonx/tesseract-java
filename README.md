@@ -1,6 +1,6 @@
 Tesseract
 =========
-A simple online RPG toolkit utility written in JavaScript, HTM5L, and CoffeeScript using Meteor and Meteorite packages.
+A 3D rendering of a 4D object called a tesseract using Java OpenGL.
 
 Navigation
 -----------
@@ -16,12 +16,13 @@ Navigation
 
 Purpose
 -------
-This project aims to create an animated 3D rendering of a 3D cube known as a tesseract. We are using Java's LWJGL library and OpenGL to make animation, and Gradle/Groovy as a build tools to make the JAR, automate testing, and to link required resources and natives. So, we're kind of doing 4 things here. 
+This project aims to create an animated 3D rendering of a 4D cube known as a tesseract. We are using Java's LWJGL library and OpenGL to make the animation, and Gradle/Groovy as a build tools to make the JAR, automate testing, and to link required resources and natives. So, we're kind of doing 4 things here. 
 
 Screenshot
 ----------
-![Picture](http://rabbitfighter.net/wp-content/uploads/2014/12/tesseract.jpg)
 This is what the tesseract should look like. 
+![Picture](http://rabbitfighter.net/wp-content/uploads/2014/12/tesseract.jpg)
+
 
 Team
 ----------------
@@ -33,7 +34,7 @@ Team
 
 Configuration
 ==============================
-This program requires the lwjgl vers 3 JAR file as well as natives for Windows, Linux, and OSX. As per our Gradle build program, these files must be obtained and put into the correct folders in the project structure or you will be an unhappy camper, and the program will fail. So the following steps are necessary:
+This program requires the lwjgl vers 3.0.0 JAR file as well as natives for Windows, Linux, and OSX. As per our Gradle build program, these files must be obtained and put into the correct folders in the project structure or you will be an unhappy camper, and the program will fail. So the following steps are necessary:
 
 JAR and natives Configuration
 -----------------------------
