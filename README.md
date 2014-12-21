@@ -1,6 +1,6 @@
 Tesseract
 =========
-A 3D rendering of a 4D object called a tesseract using Java OpenGL.
+A 3D rendering of a 4D object called a tesseract using Java OpenGL built using Gradle.
 
 Navigation
 -----------
@@ -17,6 +17,16 @@ Navigation
 Purpose
 -------
 This project aims to create an animated 3D rendering of a 4D cube known as a tesseract. We are using Java's LWJGL library and OpenGL to make the animation, and Gradle/Groovy as a build tools to make the JAR, automate testing, and to link required resources and natives. So, we're kind of doing 4 things here. 
+
+Info
+----
+Info about the tesseract can be found here: 
+<ul>
+<li>http://mathworld.wolfram.com/Tesseract.html</li>
+<li>http://en.wikipedia.org/wiki/Tesseract</li>
+<ul>
+
+This is generally what a tessearct should look like:
 
 Screenshot
 ----------
@@ -39,9 +49,9 @@ JAR and natives Configuration
 -----------------------------
 <ol>
 <li>Obtain the LWJGL zip file from: http://www.lwjgl.org/download and extract the files somewhere.</li>
-<li>Create a folder in the main directory of the project called <code>libs/</code></li>
+<li>Create a folder in the main directory of the project called <code>libs/</code> and a folder within that called <code>jars/</code>.</li>
 <li>Move the native folder from wherever you extracted the lwjgl.zip folder and rename it to <code>natives</code>, and then move the whole folder into the <code>libs/</code> folder in the project.</li>
-<li>Then copy the lwjgl.jar from the exttracted files and move it into the <code>libs/</code> folder in the project. You must then rename it <code>lwjgl3.jar</code>.</li>
+<li>Then copy the lwjgl.jar from the extracted files and move it into the <code>libs/jars</code> folder in the project. You must then rename it <code>lwjgl3.jar</code>.</li>
 </ol>
 
 Running the program
@@ -55,7 +65,7 @@ The program should run now. Yay!
 
 Liscence
 ---------
-???
+GNU GENERAL PUBLIC LICENSE Version 2
 
 TODO
 ----
