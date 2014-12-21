@@ -50,14 +50,14 @@ JAR and natives Configuration
 <ol>
 <li>Obtain the LWJGL zip file from: http://www.lwjgl.org/download and extract the files somewhere.</li>
 <li>Create a folder in the main directory of the project called <code>libs/</code> and a folder within that called <code>jars/</code>.</li>
-<li>Move the native folder from wherever you extracted the lwjgl.zip folder and rename it to <code>natives</code>, and then move the whole folder into the <code>libs/</code> folder in the project.</li>
+<li>Move the <code>native</code> folder from wherever you extracted the <code>lwjgl.zip</code> folder and rename it to <code>natives</code>, and then move the whole folder into the <code>libs/</code> folder in the project.</li>
 <li>Then copy the lwjgl.jar from the extracted files and move it into the <code>libs/jars</code> folder in the project. You must then rename it <code>lwjgl3.jar</code>.</li>
 </ol>
 
 Running the program
 -------------------
 <ol>
-<li>If gradle is not installed, install it. Then from the project directory, run <code>gradle build</code>.</li>
+<li>If gradle is not installed, install it. Then from the project directory, build the project using <code>gradle build</code>.</li>
 <li>Run the program by typing <code>gradle runJar</code></li>
 </ol>
 
