@@ -34,7 +34,7 @@ Team
 
 Configuration
 ==============================
-This program requires the lwjgl vers 3.0.0 JAR file as well as natives for Windows, Linux, and OSX. As per our Gradle build program, these files must be obtained and put into the correct folders in the project structure or you will be an unhappy camper, and the program will fail. So the following steps are necessary:
+This program requires the lwjgl vers 3.0.0a JAR file as well as natives for Windows, Linux, and OSX. As per our Gradle build program, these files must be obtained and put into the correct folders in the project structure or you will be an unhappy camper, and the program will fail. So the following steps are necessary:
 
 JAR and natives Configuration
 -----------------------------
