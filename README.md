@@ -25,7 +25,7 @@ Info about the tesseract can be found here:
 <ul>
 <li>http://mathworld.wolfram.com/Tesseract.html</li>
 <li>http://en.wikipedia.org/wiki/Tesseract</li>
-<ul>
+</ul>
 
 
 Screenshot
