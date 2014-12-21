@@ -48,7 +48,7 @@ JAR and Natives Configuration
 
 Folder Structure
 ----------------
-</code>
+<pre>
 .
 ├── build.gradle
 ├── libs
@@ -63,10 +63,9 @@ Folder Structure
 ├── src
 │   └── main
 │       └── java
-└── tree.txt
 
 9 directories, 5 files
-</code>
+</pre>
 
 This should be your folder structure before running any commands.
 
