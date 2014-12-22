@@ -13,11 +13,11 @@ import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.*;
 
 /*
-* Projects a 4D tesseract onto a 2D screen. 
-* @author redragonx && rabbitfighter
-* Some sample code modified from lwjgl.org's example for a small lwjgl3 app.
-* All openGl code is original.
-*/
+ * Projects a 4D tesseract onto a 2D screen. 
+ * @author redragonx && rabbitfighter
+ * Some sample code modified from lwjgl.org's example for a small lwjgl3 app.
+ * All openGl code is original.
+ */
 public class Tesseract {
 
     // Window & Animation stuff
@@ -35,7 +35,8 @@ public class Tesseract {
 
     public void run() {
 
-        System.out.println("Hello Tesseract using LWJGL vers: " + Sys.getVersion() + "!");
+        System.out.println("Hello Tesseract using LWJGL vers: "
+                + Sys.getVersion() + "!");
 
         try {
 
@@ -120,7 +121,7 @@ public class Tesseract {
         // the window or has pressed the ESCAPE key.
         while (glfwWindowShouldClose(window) == GL_FALSE) {
 
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the       
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the
 
             // ********************* Open GL Stuff *************************
 
@@ -139,9 +140,10 @@ public class Tesseract {
                 glRotatef((float) glfwGetTime() * 50.f, 25.f, 25.f, 1.f);
                 glScaled(.5, .5, .5);
                 standardCube();
+                insideCube();
             }
             glPopMatrix();
-            //End matrix block
+            // End matrix block
             glfwSwapBuffers(window);
             // Poll for window events. The key callback above will only be
             // invoked during this call.
@@ -244,6 +246,97 @@ public class Tesseract {
         glEnd();
 
     }// End standardCube
+
+    public void insideCube() {
+        // front face
+        glColor3f(1.0f, 1.0f, 0.0f);
+        glBegin(GL_LINE_LOOP);
+        glTexCoord2f(0, 0);
+        glVertex3d(-.5f, -.5f, -.5f);
+        glTexCoord2f(.25f, 0);
+        glVertex3d(.5f, -.5f, -.5f);
+        glTexCoord2f(.25f, .25f);
+        glVertex3d(.5f, -.5f, .5f);
+        glTexCoord2f(0, .25f);
+        glVertex3d(-.5f, -.5f, .5f);
+        glEnd();
+
+        //
+
+        // rear face
+        glColor3f(0.0f, .5f, 0.0f);
+        glBegin(GL_LINE_LOOP);
+        glTexCoord2f(0, 0);
+        glVertex3d(.5f, .5f, -.5f);
+        glTexCoord2f(.25f, 0);
+        glVertex3d(-.5f, .5f, -.5f);
+        glTexCoord2f(.25f, .25f);
+        glVertex3d(-.5f, .5f, .5f);
+        glTexCoord2f(0, .25f);
+        glVertex3d(.5f, .5f, .5f);
+        glEnd();
+
+        //
+
+        // right face
+        glColor3f(0.25f, 0.5f, 0.25f);
+        glBegin(GL_LINE_LOOP);
+        glTexCoord2f(0, 0);
+        glVertex3d(.5f, -.5f, -.5f);
+        glTexCoord2f(.25f, 0);
+        glVertex3d(.5f, .5f, -.5f);
+        glTexCoord2f(.25f, .25f);
+        glVertex3d(.5f, .5f, .5f);
+        glTexCoord2f(0, .25f);
+        glVertex3d(.5f, -.5f, .5f);
+        glEnd();
+
+        //
+
+        // left face
+        glColor3f(.5f, 0.0f, .5f);
+        glBegin(GL_LINE_LOOP);
+        glTexCoord2f(0, 0);
+        glVertex3d(-.5f, .5f, -.5f);
+        glTexCoord2f(.25f, 0);
+        glVertex3d(-.5f, -.5f, -.5f);
+        glTexCoord2f(.25f, .25f);
+        glVertex3d(-.5f, -.5f, .5f);
+        glTexCoord2f(0, .25f);
+        glVertex3d(-.5f, .5f, .5f);
+        glEnd();
+
+        //
+
+        // top face
+        glColor3f(0.0f, 0.0f, .5f);
+        glBegin(GL_LINE_LOOP);
+        glTexCoord2f(0, 0);
+        glVertex3d(-.5f, -.5f, .5f);
+        glTexCoord2f(.375f, 0);
+        glVertex3d(.5f, -.5f, .5f);
+        glTexCoord2f(.375f, .25f);
+        glVertex3d(.5f, .5f, .5f);
+        glTexCoord2f(0, .25f);
+        glVertex3d(-.5f, .5f, .5f);
+        glEnd();
+
+        //
+
+        // bottom face
+        glColor3f(0.0f, .5f, .5f);
+        glBegin(GL_LINE_LOOP);
+        glTexCoord2f(.375f, 0);
+        glVertex3d(-.5f, -.5f, -.5f);
+        glTexCoord2f(.375f, .25f);
+        glVertex3d(-.5f, .5f, -.5f);
+        glTexCoord2f(0, .25f);
+        glVertex3d(.5f, .5f, -.5f);
+        glTexCoord2f(0, 0);
+        glVertex3d(.5f, -.5f, -.5f);
+        glEnd();
+
+    }
 
 }// EOF
 
