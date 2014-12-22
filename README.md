@@ -21,6 +21,10 @@ This project aims to create an animated 3D rendering of a 4D cube known as a tes
 
 Screenshot
 ----------
+![Picture](https://dicesoft.net/publicDownloads/tesseract/tesseract2.jpg)
+
+Final result may look like this below.
+
 ![Picture](http://rabbitfighter.net/wp-content/uploads/2014/12/tesseract.jpg)
 
 
